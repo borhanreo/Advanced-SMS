@@ -343,7 +343,8 @@ namespace SMSapplication
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            listBox1.Items.Clear();
+            arryList1.Clear();
             OpenFileDialog openFileDialog1 = new OpenFileDialog
             {
                 InitialDirectory = @"C:\",
@@ -378,7 +379,7 @@ namespace SMSapplication
                         while (dr.Read())
                         {
                             var row1Col0 = dr[1];
-                            arryList1.Add(row1Col0);
+                            arryList1.Add("0"+row1Col0.ToString());
                             Console.WriteLine(row1Col0);
                         }
                     }

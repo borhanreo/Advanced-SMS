@@ -9,3 +9,14 @@ C:\Users\W3E21\Downloads\SMSapplication\SMSapplication\SMSapplication\obj\Debug\
 C:\Users\W3E21\Downloads\SMSapplication\SMSapplication\SMSapplication\obj\Debug\SMSapplication.csprojResolveAssemblyReference.cache
 C:\Users\W3E21\Downloads\SMSapplication\SMSapplication\SMSapplication\obj\Debug\Interop.Office.dll
 C:\Users\W3E21\Downloads\SMSapplication\SMSapplication\SMSapplication\obj\Debug\SMSapplication.csproj.ResolveComReference.cache
+E:\Project\Visual Studio\Advanced SMS\SMSapplication\bin\Debug\SMSapplication.exe.config
+E:\Project\Visual Studio\Advanced SMS\SMSapplication\obj\Debug\Interop.Office.dll
+E:\Project\Visual Studio\Advanced SMS\SMSapplication\obj\Debug\SMSapplication.csproj.ResolveComReference.cache
+E:\Project\Visual Studio\Advanced SMS\SMSapplication\obj\Debug\SMSapplication.exe
+E:\Project\Visual Studio\Advanced SMS\SMSapplication\obj\Debug\SMSapplication.pdb
+E:\Project\Visual Studio\Advanced SMS\SMSapplication\bin\Debug\SMSapplication.exe
+E:\Project\Visual Studio\Advanced SMS\SMSapplication\bin\Debug\SMSapplication.pdb
+E:\Project\Visual Studio\Advanced SMS\SMSapplication\obj\Debug\SMSapplication.csprojResolveAssemblyReference.cache
+E:\Project\Visual Studio\Advanced SMS\SMSapplication\obj\Debug\SMSapplication.SMSapplication.resources
+E:\Project\Visual Studio\Advanced SMS\SMSapplication\obj\Debug\SMSapplication.Properties.Resources.resources
+E:\Project\Visual Studio\Advanced SMS\SMSapplication\obj\Debug\SMSapplication.csproj.GenerateResource.Cache
