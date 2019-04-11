@@ -1,0 +1,8 @@
+11-Apr-19 4:17:26 PM ==> Response received is incomplete.
+11-Apr-19 4:17:44 PM ==> No data received from phone.
+11-Apr-19 4:22:06 PM ==> The requested resource is in use.
+
+11-Apr-19 4:22:12 PM ==> The requested resource is in use.
+
+11-Apr-19 4:24:04 PM ==> The port 'COM1' does not exist.
+11-Apr-19 6:14:21 PM ==> Response received is incomplete.
