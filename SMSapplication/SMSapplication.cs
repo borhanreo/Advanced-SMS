@@ -15,13 +15,15 @@ using System.IO.Ports;
 using System.Runtime.InteropServices;
 using Excel = Microsoft.Office.Interop.Excel;
 using System.Data.OleDb;
-using System.Collections; 
+using System.Collections;
+using System.Threading; 
 namespace SMSapplication
 {
     public partial class SMSapplication : Form
     {
-
+        string startTxt = "Hi ";
         ArrayList arryList1 = new ArrayList();
+
         #region Constructor
         public SMSapplication()
         {
@@ -98,8 +100,8 @@ namespace SMSapplication
 
                     //Add tab pages
                     this.tabSMSapplication.TabPages.Add(tbSendSMS);
-                    this.tabSMSapplication.TabPages.Add(tbReadSMS);
-                    this.tabSMSapplication.TabPages.Add(tbDeleteSMS);
+                    //this.tabSMSapplication.TabPages.Add(tbReadSMS);
+                    //this.tabSMSapplication.TabPages.Add(tbDeleteSMS);
 
                     this.lblConnectionStatus.Text = "Connected at " + this.cboPortName.Text;
                     this.btnDisconnect.Enabled = true;
@@ -145,7 +147,7 @@ namespace SMSapplication
             //.............................................. Send SMS ....................................................
             try
             {
-
+                
                 if (objclsSMS.sendMsg(this.port, this.txtSIM.Text, this.txtMessage.Text))
                 {
                     //MessageBox.Show("Message has sent successfully");
@@ -379,8 +381,9 @@ namespace SMSapplication
                         while (dr.Read())
                         {
                             var row1Col0 = dr[1];
+                            var namestr = dr[0];
                             arryList1.Add("0"+row1Col0.ToString());
-                            Console.WriteLine(row1Col0);
+                            Console.WriteLine("0"+row1Col0.ToString());
                         }
                     }
                 }
@@ -410,17 +413,20 @@ namespace SMSapplication
             {
                 for (int i = 0; i < arryList1.Count;i++ )
                 {
-                    if (objclsSMS.sendMsg(this.port, "0"+arryList1[i].ToString(), this.txtMessage.Text))
+
+                    //if (objclsSMS.sendMsg(this.port, "0" + arryList1[i].ToString(), this.txtMessage.Text))
+
+                    if (objclsSMS.sendMsg(this.port, arryList1[i].ToString(), this.txtMessage.Text))
                     {
-                        //MessageBox.Show("Message has sent successfully");
-                        
-                        this.statusBar1.Text = "Message has sent successfully "+(i+1);
+                        this.statusBar1.Text = "Message has sent successfully " + (i + 1);
+                        Console.WriteLine("Send successfully " + arryList1[i].ToString());
                     }
                     else
                     {
-                        //MessageBox.Show("Failed to send message");
                         this.statusBar1.Text = "Failed to send message ";
+                        Console.WriteLine("Send unsuccessfully " + arryList1[i].ToString());
                     }
+                    //Thread.Sleep(2000);
                 }
                     
 

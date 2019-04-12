@@ -48,6 +48,8 @@ namespace SMSapplication
             this.label1 = new System.Windows.Forms.Label();
             this.tbSendSMS = new System.Windows.Forms.TabPage();
             this.gboSendSMS = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.btnSendSMS = new System.Windows.Forms.Button();
@@ -81,8 +83,6 @@ namespace SMSapplication
             this.btnDisconnect = new System.Windows.Forms.Button();
             this.statusBar1 = new System.Windows.Forms.StatusBar();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.tabSMSapplication.SuspendLayout();
             this.tbPortSettings.SuspendLayout();
             this.gboPortSettings.SuspendLayout();
@@ -334,9 +334,27 @@ namespace SMSapplication
             this.gboSendSMS.TabStop = false;
             this.gboSendSMS.Text = "Send SMS";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(166, 301);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(102, 25);
+            this.button2.TabIndex = 46;
+            this.button2.Text = "Send Excel";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(6, 62);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(147, 277);
+            this.listBox1.TabIndex = 45;
+            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(56, 31);
+            this.button1.Location = new System.Drawing.Point(6, 19);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 25);
             this.button1.TabIndex = 44;
@@ -355,9 +373,9 @@ namespace SMSapplication
             // 
             // btnSendSMS
             // 
-            this.btnSendSMS.Location = new System.Drawing.Point(326, 314);
+            this.btnSendSMS.Location = new System.Drawing.Point(367, 19);
             this.btnSendSMS.Name = "btnSendSMS";
-            this.btnSendSMS.Size = new System.Drawing.Size(102, 25);
+            this.btnSendSMS.Size = new System.Drawing.Size(61, 25);
             this.btnSendSMS.TabIndex = 40;
             this.btnSendSMS.Text = "Send";
             this.btnSendSMS.UseVisualStyleBackColor = true;
@@ -366,21 +384,19 @@ namespace SMSapplication
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(3, 20);
+            this.label9.Location = new System.Drawing.Point(169, 25);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(26, 13);
+            this.label9.Size = new System.Drawing.Size(44, 13);
             this.label9.TabIndex = 42;
-            this.label9.Text = "SIM";
-            this.label9.Visible = false;
+            this.label9.Text = "Number";
             // 
             // txtSIM
             // 
-            this.txtSIM.Location = new System.Drawing.Point(35, 17);
+            this.txtSIM.Location = new System.Drawing.Point(219, 21);
             this.txtSIM.MaxLength = 15;
             this.txtSIM.Name = "txtSIM";
-            this.txtSIM.Size = new System.Drawing.Size(118, 20);
+            this.txtSIM.Size = new System.Drawing.Size(142, 20);
             this.txtSIM.TabIndex = 41;
-            this.txtSIM.Visible = false;
             // 
             // txtMessage
             // 
@@ -655,24 +671,6 @@ namespace SMSapplication
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(6, 62);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(147, 277);
-            this.listBox1.TabIndex = 45;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(166, 314);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(102, 25);
-            this.button2.TabIndex = 46;
-            this.button2.Text = "Send Excel";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // SMSapplication
             // 

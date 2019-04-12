@@ -16,7 +16,6 @@ E:\Project\Visual Studio\Advanced SMS\SMSapplication\obj\Debug\SMSapplication.ex
 E:\Project\Visual Studio\Advanced SMS\SMSapplication\obj\Debug\SMSapplication.pdb
 E:\Project\Visual Studio\Advanced SMS\SMSapplication\bin\Debug\SMSapplication.exe
 E:\Project\Visual Studio\Advanced SMS\SMSapplication\bin\Debug\SMSapplication.pdb
-E:\Project\Visual Studio\Advanced SMS\SMSapplication\obj\Debug\SMSapplication.csprojResolveAssemblyReference.cache
 E:\Project\Visual Studio\Advanced SMS\SMSapplication\obj\Debug\SMSapplication.SMSapplication.resources
 E:\Project\Visual Studio\Advanced SMS\SMSapplication\obj\Debug\SMSapplication.Properties.Resources.resources
 E:\Project\Visual Studio\Advanced SMS\SMSapplication\obj\Debug\SMSapplication.csproj.GenerateResource.Cache
